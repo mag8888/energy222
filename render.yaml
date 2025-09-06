@@ -1,8 +1,8 @@
 services:
-  - type: web
+  - type: static
     name: energy222
-    env: static
+    plan: free
+    buildCommand: echo "No build required for static site"
     staticPublishPath: .
-    buildCommand: ""
-    pullRequestPreviewsEnabled: false
+    autoDeploy: true
 
